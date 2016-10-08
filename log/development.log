@@ -4176,3 +4176,400 @@ Migrating to DropRegisteredPeople (20161008022632)
             FROM sqlite_temp_master
             WHERE name='index_website_admins_on_person_id' AND type='index'
 [0m
+Started GET "/" for 127.0.0.1 at 2016-10-07 19:59:09 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomePageController#index as HTML
+  Rendering home_page/index.html.erb within layouts/application
+  Rendered home_page/index.html.erb within layouts/application (82.0ms)
+Completed 200 OK in 9300ms (Views: 9180.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2016-10-07 19:59:55 -0700
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (1.4ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  Rendered people/index.html.erb within layouts/application (221.4ms)
+Completed 200 OK in 552ms (Views: 492.1ms | ActiveRecord: 4.2ms)
+
+
+Started DELETE "/people/12" for 127.0.0.1 at 2016-10-07 20:00:28 -0700
+Processing by PeopleController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Iu2CsT7bF6O8w9ipx0wopX8EX8lrd2UGLFmrZVRPRm/rP6RcAFR5EuobKmMP7YfvteuorV66iXkdKy6S0rWrTA==", "id"=>"12"}
+  [1m[36mPerson Load (5.6ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (18.2ms)[0m  [1m[31mDELETE FROM "people" WHERE "people"."id" = ?[0m  [["id", 12]]
+  [1m[35m (38.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/people
+Completed 302 Found in 208ms (ActiveRecord: 62.9ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2016-10-07 20:00:29 -0700
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (1.0ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  Rendered people/index.html.erb within layouts/application (58.0ms)
+Completed 200 OK in 809ms (Views: 785.2ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/people/13" for 127.0.0.1 at 2016-10-07 20:00:33 -0700
+Processing by PeopleController#destroy as HTML
+  Parameters: {"authenticity_token"=>"veEpGGUNsDcVoyz2Z1/T/Qg2ZdFNh3TgMDeZga93It10Mw/1W4LehkN73jyv/ny3wtmStXhKmJ8BRRx2KY3P/g==", "id"=>"13"}
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (6.1ms)[0m  [1m[31mDELETE FROM "people" WHERE "people"."id" = ?[0m  [["id", 13]]
+  [1m[35m (54.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/people
+Completed 302 Found in 111ms (ActiveRecord: 61.0ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2016-10-07 20:00:34 -0700
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (14.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  Rendered people/index.html.erb within layouts/application (77.3ms)
+Completed 200 OK in 671ms (Views: 605.6ms | ActiveRecord: 14.3ms)
+
+
+Started DELETE "/people/14" for 127.0.0.1 at 2016-10-07 20:01:05 -0700
+Processing by PeopleController#destroy as HTML
+  Parameters: {"authenticity_token"=>"51FD/j3MYL3sYK9dlIqlHXF447HtM6IyRg3ZQ6X1p0gug2UTA0MODLq4XZdcKwpXu5cU1dj+Tk13f1y0Iw9Kaw==", "id"=>"14"}
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (6.1ms)[0m  [1m[31mDELETE FROM "people" WHERE "people"."id" = ?[0m  [["id", 14]]
+  [1m[35m (575.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/people
+Completed 302 Found in 648ms (ActiveRecord: 582.3ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2016-10-07 20:01:07 -0700
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (6.9ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  Rendered people/index.html.erb within layouts/application (58.1ms)
+Completed 200 OK in 504ms (Views: 484.4ms | ActiveRecord: 6.9ms)
+
+
+Started DELETE "/people/9" for 127.0.0.1 at 2016-10-07 20:01:12 -0700
+Processing by PeopleController#destroy as HTML
+  Parameters: {"authenticity_token"=>"nSktVk1N7mMTn3BkXlxBjvjTj3Ejm5dsRUx74J4k5oJU+wu7c8KA0kVHgq6W/e7EMjx4FRZWexN0Pv4XGN4LoQ==", "id"=>"9"}
+  [1m[36mPerson Load (4.8ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (7.0ms)[0m  [1m[31mDELETE FROM "people" WHERE "people"."id" = ?[0m  [["id", 9]]
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/people
+Completed 302 Found in 41ms (ActiveRecord: 17.2ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2016-10-07 20:01:12 -0700
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (1.0ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  Rendered people/index.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 203ms (Views: 198.8ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/people/10" for 127.0.0.1 at 2016-10-07 20:02:10 -0700
+Processing by PeopleController#destroy as HTML
+  Parameters: {"authenticity_token"=>"RJZACdv2Z94JC5LZ9gpL4z1LRMVLA1QmJwPfS+ZE3neNRGbk5XkJb1/TYBM+q+Sp96SzoX7OuFkWcVq8YL4zVA==", "id"=>"10"}
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (9.0ms)[0m  [1m[31mDELETE FROM "people" WHERE "people"."id" = ?[0m  [["id", 10]]
+  [1m[35m (201.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/people
+Completed 302 Found in 269ms (ActiveRecord: 211.2ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2016-10-07 20:02:10 -0700
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (1.4ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  Rendered people/index.html.erb within layouts/application (85.4ms)
+Completed 200 OK in 844ms (Views: 794.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/people/1" for 127.0.0.1 at 2016-10-07 20:02:21 -0700
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 546ms (Views: 529.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/people/1/edit" for 127.0.0.1 at 2016-10-07 20:03:12 -0700
+Processing by PeopleController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering people/edit.html.erb within layouts/application
+  Rendered people/edit.html.erb within layouts/application (280.5ms)
+Completed 200 OK in 760ms (Views: 746.9ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/people/1" for 127.0.0.1 at 2016-10-07 20:03:24 -0700
+Processing by PeopleController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kDHMh2LpX103jWe4eRgevsccgWCsG7qEmA3Ky3HItRe8c9/+PtJEWAhZQfpGJlqMkL12+5WTkFhWE5RJ7JGiTw==", "person"=>{"firstname"=>"Neil", "lastname"=>"Veira", "dob"=>"a", "location"=>"b", "phone"=>"c", "email"=>"d"}, "commit"=>"Save Person", "id"=>"1"}
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (5.5ms)[0m  [1m[33mUPDATE "people" SET "phone" = ?, "location" = ?, "email" = ?, "updated_at" = ? WHERE "people"."id" = ?[0m  [["phone", "c"], ["location", "b"], ["email", "d"], ["updated_at", 2016-10-08 03:03:24 UTC], ["id", 1]]
+  [1m[35m (19.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/people/1
+Completed 302 Found in 110ms (ActiveRecord: 25.4ms)
+
+
+Started GET "/people/1" for 127.0.0.1 at 2016-10-07 20:03:25 -0700
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 413ms (Views: 392.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/home_page/index" for 127.0.0.1 at 2016-10-07 20:03:29 -0700
+Processing by HomePageController#index as HTML
+  Rendering home_page/index.html.erb within layouts/application
+  Rendered home_page/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 404ms (Views: 387.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/people/new" for 127.0.0.1 at 2016-10-07 20:03:33 -0700
+Processing by PeopleController#new as HTML
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/new.html.erb within layouts/application (29.2ms)
+Completed 200 OK in 408ms (Views: 404.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/people" for 127.0.0.1 at 2016-10-07 20:03:42 -0700
+Processing by PeopleController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BqGVv5PbPH+t3K1Uz2IJNo4a+/U+KV1jLWhEJYH2zVU6PbJr78mKHF0M0IjSWycv1/Oqg7h2mUow7dTK0VRvqg==", "person"=>{"firstname"=>"a", "lastname"=>"b", "dob"=>"c", "location"=>"d", "phone"=>"e", "email"=>"f"}, "commit"=>"Save Person"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (5.3ms)[0m  [1m[32mINSERT INTO "people" ("firstname", "lastname", "dob", "phone", "email", "created_at", "updated_at", "location") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["firstname", "a"], ["lastname", "b"], ["dob", "c"], ["phone", "e"], ["email", "f"], ["created_at", 2016-10-08 03:03:42 UTC], ["updated_at", 2016-10-08 03:03:42 UTC], ["location", "d"]]
+  [1m[35m (20.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/people/15
+Completed 302 Found in 65ms (ActiveRecord: 25.6ms)
+
+
+Started GET "/people/15" for 127.0.0.1 at 2016-10-07 20:03:43 -0700
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 418ms (Views: 405.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/home_page/index" for 127.0.0.1 at 2016-10-07 20:03:58 -0700
+Processing by HomePageController#index as HTML
+  Rendering home_page/index.html.erb within layouts/application
+  Rendered home_page/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 347ms (Views: 343.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2016-10-07 20:04:00 -0700
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (0.9ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  Rendered people/index.html.erb within layouts/application (72.9ms)
+Completed 200 OK in 407ms (Views: 394.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/people/6" for 127.0.0.1 at 2016-10-07 20:04:14 -0700
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 391ms (Views: 371.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/home_page/index" for 127.0.0.1 at 2016-10-07 20:04:17 -0700
+Processing by HomePageController#index as HTML
+  Rendering home_page/index.html.erb within layouts/application
+  Rendered home_page/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 370ms (Views: 354.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2016-10-07 20:04:19 -0700
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (9.1ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  Rendered people/index.html.erb within layouts/application (37.7ms)
+Completed 200 OK in 397ms (Views: 372.8ms | ActiveRecord: 9.1ms)
+
+
+Started DELETE "/people/15" for 127.0.0.1 at 2016-10-07 20:04:26 -0700
+Processing by PeopleController#destroy as HTML
+  Parameters: {"authenticity_token"=>"du8jKv8Iw7CpAjd63IZbVpGKPZlADGljgF3eW2Gi+om/PQXHwYetAf/axbAUJ/QcW2XK/XXBhRyxL1us51gXqg==", "id"=>"15"}
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.9ms)[0m  [1m[31mDELETE FROM "people" WHERE "people"."id" = ?[0m  [["id", 15]]
+  [1m[35m (56.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/people
+Completed 302 Found in 104ms (ActiveRecord: 62.4ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2016-10-07 20:04:27 -0700
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (0.9ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  Rendered people/index.html.erb within layouts/application (46.6ms)
+Completed 200 OK in 397ms (Views: 383.9ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/people/1" for 127.0.0.1 at 2016-10-07 20:04:34 -0700
+Processing by PeopleController#destroy as HTML
+  Parameters: {"authenticity_token"=>"G24kHPXAS5W4AJfx+7bJnBucSGpG4LpW+8zS//cecHzSvALxy08lJO7YZTszF2bW0XO/DnMtVinKvlcIceSdXw==", "id"=>"1"}
+  [1m[36mPerson Load (0.5ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[31mDELETE FROM "people" WHERE "people"."id" = ?[0m  [["id", 1]]
+  [1m[35m (6.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/people
+Completed 302 Found in 43ms (ActiveRecord: 8.5ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2016-10-07 20:04:34 -0700
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (0.9ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  Rendered people/index.html.erb within layouts/application (42.0ms)
+Completed 200 OK in 496ms (Views: 484.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/people/3" for 127.0.0.1 at 2016-10-07 20:04:38 -0700
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (20.7ms)
+Completed 200 OK in 353ms (Views: 329.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-08 06:08:18 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (5.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomePageController#index as HTML
+  Rendering home_page/index.html.erb within layouts/application
+  Rendered home_page/index.html.erb within layouts/application (92.2ms)
+Completed 200 OK in 8088ms (Views: 7848.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2016-10-08 06:08:45 -0700
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (14.6ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  Rendered people/index.html.erb within layouts/application (341.9ms)
+Completed 200 OK in 1081ms (Views: 940.0ms | ActiveRecord: 17.6ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2016-10-08 06:08:47 -0700
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (0.8ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  Rendered people/index.html.erb within layouts/application (81.2ms)
+Completed 200 OK in 762ms (Views: 744.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/people/2" for 127.0.0.1 at 2016-10-08 06:08:52 -0700
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.7ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 1390ms (Views: 1234.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/home_page/index" for 127.0.0.1 at 2016-10-08 06:08:57 -0700
+Processing by HomePageController#index as HTML
+  Rendering home_page/index.html.erb within layouts/application
+  Rendered home_page/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 507ms (Views: 491.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/people/new" for 127.0.0.1 at 2016-10-08 06:09:01 -0700
+Processing by PeopleController#new as HTML
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/new.html.erb within layouts/application (505.8ms)
+Completed 200 OK in 1204ms (Views: 1173.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/people" for 127.0.0.1 at 2016-10-08 06:09:14 -0700
+Processing by PeopleController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Mc51x+4sebPwZVTpazUuL4GlTxbv3F7n/EkkOVYYyLkNUlITkj7P0AC1KTV2DAA22EweYGmDms7hzLTWBrpqRg==", "person"=>{"firstname"=>"a", "lastname"=>"b", "dob"=>"c", "location"=>"d", "phone"=>"e", "email"=>"f"}, "commit"=>"Save Person"}
+  [1m[35m (2.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (169.8ms)[0m  [1m[32mINSERT INTO "people" ("firstname", "lastname", "dob", "phone", "email", "created_at", "updated_at", "location") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["firstname", "a"], ["lastname", "b"], ["dob", "c"], ["phone", "e"], ["email", "f"], ["created_at", 2016-10-08 13:09:14 UTC], ["updated_at", 2016-10-08 13:09:14 UTC], ["location", "d"]]
+  [1m[35m (50.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/people/16
+Completed 302 Found in 395ms (ActiveRecord: 222.9ms)
+
+
+Started GET "/people/16" for 127.0.0.1 at 2016-10-08 06:09:16 -0700
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mPerson Load (20.1ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (18.4ms)
+Completed 200 OK in 1045ms (Views: 1019.0ms | ActiveRecord: 20.1ms)
+
+
+Started GET "/people/16/edit" for 127.0.0.1 at 2016-10-08 06:09:27 -0700
+Processing by PeopleController#edit as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  Rendering people/edit.html.erb within layouts/application
+  Rendered people/edit.html.erb within layouts/application (111.1ms)
+Completed 200 OK in 716ms (Views: 664.7ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/people/16" for 127.0.0.1 at 2016-10-08 06:09:36 -0700
+Processing by PeopleController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cM/bzv0ZfinKKsdkGO9zer4qNXmMrIChXBbltN+KgJ75Ke190iPgDFaY8rv7ovRNHHObuMTDNZwaeeRKe22bfA==", "person"=>{"firstname"=>"Neil", "lastname"=>"Veira", "dob"=>"c", "location"=>"d", "phone"=>"e", "email"=>"f"}, "commit"=>"Save Person", "id"=>"16"}
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (30.6ms)[0m  [1m[33mUPDATE "people" SET "firstname" = ?, "lastname" = ?, "updated_at" = ? WHERE "people"."id" = ?[0m  [["firstname", "Neil"], ["lastname", "Veira"], ["updated_at", 2016-10-08 13:09:36 UTC], ["id", 16]]
+  [1m[35m (12.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/people/16
+Completed 302 Found in 91ms (ActiveRecord: 43.5ms)
+
+
+Started GET "/people/16" for 127.0.0.1 at 2016-10-08 06:09:36 -0700
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 554ms (Views: 538.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/home_page/index" for 127.0.0.1 at 2016-10-08 06:09:44 -0700
+Processing by HomePageController#index as HTML
+  Rendering home_page/index.html.erb within layouts/application
+  Rendered home_page/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 433ms (Views: 416.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2016-10-08 06:09:46 -0700
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (0.9ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  Rendered people/index.html.erb within layouts/application (32.3ms)
+Completed 200 OK in 401ms (Views: 375.4ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/people/16" for 127.0.0.1 at 2016-10-08 06:09:50 -0700
+Processing by PeopleController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Tol0ye/4IIMNLqgCiSHIznuuZzx9Ow/a8+iSIf+9guyHW1Ik0XdOMlv2WshBgGeEsUGQWEj246XCmhfWeUdvzw==", "id"=>"16"}
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (9.0ms)[0m  [1m[31mDELETE FROM "people" WHERE "people"."id" = ?[0m  [["id", 16]]
+  [1m[35m (7.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/people
+Completed 302 Found in 55ms (ActiveRecord: 16.7ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2016-10-08 06:09:51 -0700
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (4.1ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  Rendered people/index.html.erb within layouts/application (38.1ms)
+Completed 200 OK in 497ms (Views: 489.2ms | ActiveRecord: 4.1ms)
+
+

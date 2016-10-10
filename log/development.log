@@ -5156,3 +5156,295 @@ Migrating to DropRegisteredPeople (20161008022632)
   [1m[36mGolfCourseOrganizer Load (0.0ms)[0m  [1m[34mSELECT "golf_course_organizers".* FROM "golf_course_organizers"[0m
   [1m[36mSponsor Load (0.0ms)[0m  [1m[34mSELECT "sponsors".* FROM "sponsors"[0m
   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (5.5ms)[0m  [1m[32mINSERT INTO "people" ("firstname", "lastname", "dob", "phone", "email", "created_at", "updated_at", "location") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["firstname", "FirstName1"], ["lastname", "LastName1"], ["dob", "dob1"], ["phone", "phone1"], ["email", "email1"], ["created_at", 2016-10-10 00:42:10 UTC], ["updated_at", 2016-10-10 00:42:10 UTC], ["location", "loc1"]]
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "people" ("firstname", "lastname", "dob", "phone", "email", "created_at", "updated_at", "location") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["firstname", "FirstName2"], ["lastname", "LastName2"], ["dob", "dob2"], ["phone", "phone2"], ["email", "email2"], ["created_at", 2016-10-10 00:42:10 UTC], ["updated_at", 2016-10-10 00:42:10 UTC], ["location", "loc2"]]
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "people" ("firstname", "lastname", "dob", "phone", "email", "created_at", "updated_at", "location") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["firstname", "FirstName3"], ["lastname", "LastName3"], ["dob", "dob3"], ["phone", "address3"], ["email", "phone3"], ["created_at", 2016-10-10 00:42:10 UTC], ["updated_at", 2016-10-10 00:42:10 UTC], ["location", "email3"]]
+  [1m[35m (20.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "people" ("firstname", "lastname", "dob", "phone", "email", "created_at", "updated_at", "location") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["firstname", "FN3"], ["lastname", "LN3"], ["dob", "dob3"], ["phone", "phone3"], ["email", "email3"], ["created_at", 2016-10-10 00:42:10 UTC], ["updated_at", 2016-10-10 00:42:10 UTC], ["location", "loc4"]]
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "people" ("firstname", "lastname", "dob", "phone", "email", "created_at", "updated_at", "location") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["firstname", "FN4"], ["lastname", "LN4"], ["dob", "dob4"], ["phone", "phone4"], ["email", "email4"], ["created_at", 2016-10-10 00:42:10 UTC], ["updated_at", 2016-10-10 00:42:10 UTC], ["location", "loc5"]]
+  [1m[35m (19.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "people" ("firstname", "lastname", "dob", "phone", "email", "created_at", "updated_at", "location") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["firstname", "FN5"], ["lastname", "LN5"], ["dob", "d5"], ["phone", "ph5"], ["email", "em5"], ["created_at", 2016-10-10 00:42:10 UTC], ["updated_at", 2016-10-10 00:42:10 UTC], ["location", "loc7"]]
+  [1m[35m (12.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "people" ("firstname", "lastname", "dob", "phone", "email", "created_at", "updated_at", "location") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["firstname", "FN6"], ["lastname", "LN6"], ["dob", "d6"], ["phone", "ph6"], ["email", "em6"], ["created_at", 2016-10-10 00:42:10 UTC], ["updated_at", 2016-10-10 00:42:10 UTC], ["location", "loc8"]]
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "golf_courses" ("name", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "golfn1"], ["location", "loc1"], ["created_at", 2016-10-10 00:42:10 UTC], ["updated_at", 2016-10-10 00:42:10 UTC]]
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "golf_courses" ("name", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "golfn2"], ["location", "loc2"], ["created_at", 2016-10-10 00:42:10 UTC], ["updated_at", 2016-10-10 00:42:10 UTC]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "golf_courses" ("name", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "golfn3"], ["location", "loc3"], ["created_at", 2016-10-10 00:42:10 UTC], ["updated_at", 2016-10-10 00:42:10 UTC]]
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "golf_courses" ("name", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "golfn4"], ["location", "loc4"], ["created_at", 2016-10-10 00:42:10 UTC], ["updated_at", 2016-10-10 00:42:10 UTC]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "golf_courses" ("name", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "golfn5"], ["location", "loc5"], ["created_at", 2016-10-10 00:42:10 UTC], ["updated_at", 2016-10-10 00:42:10 UTC]]
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "golf_courses" ("name", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "golfn6"], ["location", "loc6"], ["created_at", 2016-10-10 00:42:10 UTC], ["updated_at", 2016-10-10 00:42:10 UTC]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "golf_courses" ("name", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "golfn7"], ["location", "loc7"], ["created_at", 2016-10-10 00:42:10 UTC], ["updated_at", 2016-10-10 00:42:10 UTC]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mGolfCourse Load (0.7ms)[0m  [1m[34mSELECT  "golf_courses".* FROM "golf_courses" ORDER BY "golf_courses"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mGolfCourse Load (0.2ms)[0m  [1m[34mSELECT  "golf_courses".* FROM "golf_courses" ORDER BY "golf_courses"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mGolfCourse Load (0.6ms)[0m  [1m[34mSELECT  "golf_courses".* FROM "golf_courses" ORDER BY "golf_courses"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mGolfCourse Load (0.2ms)[0m  [1m[34mSELECT  "golf_courses".* FROM "golf_courses" ORDER BY "golf_courses"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mGolfCourse Load (0.2ms)[0m  [1m[34mSELECT  "golf_courses".* FROM "golf_courses" ORDER BY "golf_courses"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mGolfCourse Load (0.2ms)[0m  [1m[34mSELECT  "golf_courses".* FROM "golf_courses" ORDER BY "golf_courses"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "tournaments" ("name", "description", "ispublic", "extrafeatures", "created_at", "updated_at", "golf_course_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "tourname1"], ["description", "description1"], ["ispublic", true], ["extrafeatures", "extrafeatures1"], ["created_at", 2016-10-10 00:42:10 UTC], ["updated_at", 2016-10-10 00:42:10 UTC], ["golf_course_id", 1]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "tournaments" ("name", "description", "ispublic", "extrafeatures", "created_at", "updated_at", "golf_course_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "tourname2"], ["description", "description2"], ["ispublic", true], ["extrafeatures", "extrafeatures2"], ["created_at", 2016-10-10 00:42:10 UTC], ["updated_at", 2016-10-10 00:42:10 UTC], ["golf_course_id", 1]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "tournaments" ("name", "description", "ispublic", "extrafeatures", "created_at", "updated_at", "golf_course_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "tourname3"], ["description", "description3"], ["ispublic", true], ["extrafeatures", "extrafeatures3"], ["created_at", 2016-10-10 00:42:10 UTC], ["updated_at", 2016-10-10 00:42:10 UTC], ["golf_course_id", 2]]
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "tournaments" ("name", "description", "ispublic", "extrafeatures", "created_at", "updated_at", "golf_course_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "tourname4"], ["description", "description4"], ["ispublic", false], ["extrafeatures", "extrafeatures4"], ["created_at", 2016-10-10 00:42:10 UTC], ["updated_at", 2016-10-10 00:42:10 UTC], ["golf_course_id", 2]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "tournaments" ("name", "description", "ispublic", "extrafeatures", "created_at", "updated_at", "golf_course_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "tourname5"], ["description", "description5"], ["ispublic", false], ["extrafeatures", "extrafeatures5"], ["created_at", 2016-10-10 00:42:10 UTC], ["updated_at", 2016-10-10 00:42:10 UTC], ["golf_course_id", 2]]
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "tournaments" ("name", "description", "ispublic", "extrafeatures", "created_at", "updated_at", "golf_course_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "tourname6"], ["description", "desc6"], ["ispublic", false], ["extrafeatures", "extraf6"], ["created_at", 2016-10-10 00:42:10 UTC], ["updated_at", 2016-10-10 00:42:10 UTC], ["golf_course_id", 1]]
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTournament Load (0.6ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" ORDER BY "tournaments"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTournament Load (0.2ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" ORDER BY "tournaments"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTournament Load (0.2ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" ORDER BY "tournaments"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTournament Load (0.5ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" ORDER BY "tournaments"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mTournament Load (0.2ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" ORDER BY "tournaments"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mTournament Load (0.2ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" ORDER BY "tournaments"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 3]]
+  [1m[36mTournament Load (0.2ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" ORDER BY "tournaments"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 3]]
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTournament Load (0.6ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "teams" ("name", "tournament_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "team1"], ["tournament_id", 1], ["created_at", 2016-10-10 00:42:10 UTC], ["updated_at", 2016-10-10 00:42:10 UTC]]
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTournament Load (0.3ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "teams" ("name", "tournament_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "team2"], ["tournament_id", 1], ["created_at", 2016-10-10 00:42:10 UTC], ["updated_at", 2016-10-10 00:42:10 UTC]]
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTournament Load (0.3ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (2.8ms)[0m  [1m[32mINSERT INTO "teams" ("name", "tournament_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "team3"], ["tournament_id", 1], ["created_at", 2016-10-10 00:42:10 UTC], ["updated_at", 2016-10-10 00:42:10 UTC]]
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTournament Load (0.3ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "teams" ("name", "tournament_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "team4"], ["tournament_id", 2], ["created_at", 2016-10-10 00:42:10 UTC], ["updated_at", 2016-10-10 00:42:10 UTC]]
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTournament Load (0.3ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "teams" ("name", "tournament_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "team5"], ["tournament_id", 2], ["created_at", 2016-10-10 00:42:10 UTC], ["updated_at", 2016-10-10 00:42:10 UTC]]
+  [1m[35m (4.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTournament Load (0.3ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "teams" ("name", "tournament_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "team6"], ["tournament_id", 4], ["created_at", 2016-10-10 00:42:10 UTC], ["updated_at", 2016-10-10 00:42:10 UTC]]
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTournament Load (0.3ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "teams" ("name", "tournament_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "team6"], ["tournament_id", 4], ["created_at", 2016-10-10 00:42:10 UTC], ["updated_at", 2016-10-10 00:42:10 UTC]]
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPerson Load (0.6ms)[0m  [1m[34mSELECT  "people".* FROM "people" ORDER BY "people"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.5ms)[0m  [1m[34mSELECT  "people".* FROM "people" ORDER BY "people"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" ORDER BY "people"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 2]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" ORDER BY "people"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 3]]
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT  "people".* FROM "people" ORDER BY "people"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 4]]
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPerson Load (0.6ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (4.6ms)[0m  [1m[32mINSERT INTO "tickets" ("tickettype", "person_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["tickettype", 1], ["person_id", 1], ["created_at", 2016-10-10 00:42:10 UTC], ["updated_at", 2016-10-10 00:42:10 UTC]]
+  [1m[35m (9.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "tickets" ("tickettype", "person_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["tickettype", 2], ["person_id", 2], ["created_at", 2016-10-10 00:42:11 UTC], ["updated_at", 2016-10-10 00:42:11 UTC]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "tickets" ("tickettype", "person_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["tickettype", 3], ["person_id", 3], ["created_at", 2016-10-10 00:42:11 UTC], ["updated_at", 2016-10-10 00:42:11 UTC]]
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "tickets" ("tickettype", "person_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["tickettype", 2], ["person_id", 4], ["created_at", 2016-10-10 00:42:11 UTC], ["updated_at", 2016-10-10 00:42:11 UTC]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "tickets" ("tickettype", "person_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["tickettype", 1], ["person_id", 5], ["created_at", 2016-10-10 00:42:11 UTC], ["updated_at", 2016-10-10 00:42:11 UTC]]
+  [1m[35m (3.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT  "people".* FROM "people" ORDER BY "people"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTournament Load (0.3ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" ORDER BY "tournaments"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" ORDER BY "people"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mTournament Load (0.3ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" ORDER BY "tournaments"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" ORDER BY "people"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 2]]
+  [1m[36mTournament Load (0.3ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" ORDER BY "tournaments"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 2]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" ORDER BY "people"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 3]]
+  [1m[36mTournament Load (0.2ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" ORDER BY "tournaments"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTournament Load (0.2ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "registered_teams" ("name", "person_id", "tournament_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "rtname1"], ["person_id", 1], ["tournament_id", 1], ["created_at", 2016-10-10 00:42:11 UTC], ["updated_at", 2016-10-10 00:42:11 UTC]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTournament Load (0.2ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "registered_teams" ("name", "person_id", "tournament_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "rtname2"], ["person_id", 2], ["tournament_id", 1], ["created_at", 2016-10-10 00:42:11 UTC], ["updated_at", 2016-10-10 00:42:11 UTC]]
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTournament Load (0.2ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "registered_teams" ("name", "person_id", "tournament_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "rtname3"], ["person_id", 3], ["tournament_id", 3], ["created_at", 2016-10-10 00:42:11 UTC], ["updated_at", 2016-10-10 00:42:11 UTC]]
+  [1m[35m (4.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTournament Load (0.2ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "registered_teams" ("name", "person_id", "tournament_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "rtname4"], ["person_id", 4], ["tournament_id", 1], ["created_at", 2016-10-10 00:42:11 UTC], ["updated_at", 2016-10-10 00:42:11 UTC]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" ORDER BY "people"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" ORDER BY "people"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" ORDER BY "people"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 2]]
+  [1m[36mPerson Load (0.6ms)[0m  [1m[34mSELECT  "people".* FROM "people" ORDER BY "people"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 3]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" ORDER BY "people"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 4]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "website_admins" ("person_id", "adminrights", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["person_id", 1], ["adminrights", 1], ["created_at", 2016-10-10 00:42:11 UTC], ["updated_at", 2016-10-10 00:42:11 UTC]]
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "website_admins" ("person_id", "adminrights", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["person_id", 2], ["adminrights", 0], ["created_at", 2016-10-10 00:42:11 UTC], ["updated_at", 2016-10-10 00:42:11 UTC]]
+  [1m[35m (6.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "website_admins" ("person_id", "adminrights", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["person_id", 3], ["adminrights", 2], ["created_at", 2016-10-10 00:42:11 UTC], ["updated_at", 2016-10-10 00:42:11 UTC]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "website_admins" ("person_id", "adminrights", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["person_id", 4], ["adminrights", 0], ["created_at", 2016-10-10 00:42:11 UTC], ["updated_at", 2016-10-10 00:42:11 UTC]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "website_admins" ("person_id", "adminrights", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["person_id", 5], ["adminrights", 2], ["created_at", 2016-10-10 00:42:11 UTC], ["updated_at", 2016-10-10 00:42:11 UTC]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" ORDER BY "people"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTournament Load (0.3ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" ORDER BY "tournaments"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" ORDER BY "people"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mTournament Load (0.2ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" ORDER BY "tournaments"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" ORDER BY "people"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 2]]
+  [1m[36mTournament Load (0.2ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" ORDER BY "tournaments"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 2]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" ORDER BY "people"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 3]]
+  [1m[36mTournament Load (0.2ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" ORDER BY "tournaments"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTournament Load (0.2ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "tournament_organizers" ("person_id", "tournament_id", "adminrights", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["person_id", 1], ["tournament_id", 1], ["adminrights", 0], ["created_at", 2016-10-10 00:42:11 UTC], ["updated_at", 2016-10-10 00:42:11 UTC]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTournament Load (0.3ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "tournament_organizers" ("person_id", "tournament_id", "adminrights", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["person_id", 2], ["tournament_id", 1], ["adminrights", 1], ["created_at", 2016-10-10 00:42:11 UTC], ["updated_at", 2016-10-10 00:42:11 UTC]]
+  [1m[35m (3.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTournament Load (0.2ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "tournament_organizers" ("person_id", "tournament_id", "adminrights", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["person_id", 3], ["tournament_id", 3], ["adminrights", 1], ["created_at", 2016-10-10 00:42:11 UTC], ["updated_at", 2016-10-10 00:42:11 UTC]]
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTournament Load (0.2ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (4.2ms)[0m  [1m[32mINSERT INTO "tournament_organizers" ("person_id", "tournament_id", "adminrights", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["person_id", 4], ["tournament_id", 1], ["adminrights", 0], ["created_at", 2016-10-10 00:42:11 UTC], ["updated_at", 2016-10-10 00:42:11 UTC]]
+  [1m[35m (29.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" ORDER BY "people"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTournament Load (0.2ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" ORDER BY "tournaments"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" ORDER BY "people"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mTournament Load (0.2ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" ORDER BY "tournaments"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" ORDER BY "people"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 2]]
+  [1m[36mTournament Load (0.2ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" ORDER BY "tournaments"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 2]]
+  [1m[36mPerson Load (1.6ms)[0m  [1m[34mSELECT  "people".* FROM "people" ORDER BY "people"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 3]]
+  [1m[36mTournament Load (0.3ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" ORDER BY "tournaments"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTournament Load (0.2ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (3.3ms)[0m  [1m[32mINSERT INTO "golf_course_organizers" ("person_id", "tournament_id", "adminrights", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["person_id", 1], ["tournament_id", 1], ["adminrights", 0], ["created_at", 2016-10-10 00:42:11 UTC], ["updated_at", 2016-10-10 00:42:11 UTC]]
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTournament Load (0.2ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "golf_course_organizers" ("person_id", "tournament_id", "adminrights", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["person_id", 2], ["tournament_id", 1], ["adminrights", 1], ["created_at", 2016-10-10 00:42:11 UTC], ["updated_at", 2016-10-10 00:42:11 UTC]]
+  [1m[35m (4.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPerson Load (0.6ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTournament Load (0.2ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "golf_course_organizers" ("person_id", "tournament_id", "adminrights", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["person_id", 3], ["tournament_id", 3], ["adminrights", 1], ["created_at", 2016-10-10 00:42:11 UTC], ["updated_at", 2016-10-10 00:42:11 UTC]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTournament Load (0.2ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "golf_course_organizers" ("person_id", "tournament_id", "adminrights", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["person_id", 4], ["tournament_id", 1], ["adminrights", 0], ["created_at", 2016-10-10 00:42:11 UTC], ["updated_at", 2016-10-10 00:42:11 UTC]]
+  [1m[35m (9.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" ORDER BY "people"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 2]]
+  [1m[36mTournament Load (0.2ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" ORDER BY "tournaments"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" ORDER BY "people"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 4]]
+  [1m[36mTournament Load (0.2ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" ORDER BY "tournaments"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" ORDER BY "people"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 2]]
+  [1m[36mTournament Load (1.8ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" ORDER BY "tournaments"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 2]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" ORDER BY "people"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 3]]
+  [1m[36mTournament Load (0.2ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" ORDER BY "tournaments"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTournament Load (0.2ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "sponsors" ("person_id", "tournament_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["person_id", 3], ["tournament_id", 1], ["created_at", 2016-10-10 00:42:11 UTC], ["updated_at", 2016-10-10 00:42:11 UTC]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mTournament Load (5.7ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (4.6ms)[0m  [1m[32mINSERT INTO "sponsors" ("person_id", "tournament_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["person_id", 5], ["tournament_id", 1], ["created_at", 2016-10-10 00:42:11 UTC], ["updated_at", 2016-10-10 00:42:11 UTC]]
+  [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTournament Load (0.2ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "sponsors" ("person_id", "tournament_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["person_id", 3], ["tournament_id", 3], ["created_at", 2016-10-10 00:42:11 UTC], ["updated_at", 2016-10-10 00:42:11 UTC]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTournament Load (0.1ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (2.5ms)[0m  [1m[32mINSERT INTO "sponsors" ("person_id", "tournament_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["person_id", 4], ["tournament_id", 1], ["created_at", 2016-10-10 00:42:11 UTC], ["updated_at", 2016-10-10 00:42:11 UTC]]
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" ORDER BY "people"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 2]]
+  [1m[36mTournament Load (0.4ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" ORDER BY "tournaments"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (1.9ms)[0m  [1m[34mSELECT  "people".* FROM "people" ORDER BY "people"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 4]]
+  [1m[36mTournament Load (0.5ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" ORDER BY "tournaments"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" ORDER BY "people"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 2]]
+  [1m[36mTournament Load (0.2ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" ORDER BY "tournaments"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 2]]
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" ORDER BY "people"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 3]]
+  [1m[36mTournament Load (0.2ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" ORDER BY "tournaments"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTournament Load (0.2ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (3.8ms)[0m  [1m[32mINSERT INTO "players" ("person_id", "tournament_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["person_id", 3], ["tournament_id", 1], ["created_at", 2016-10-10 00:42:12 UTC], ["updated_at", 2016-10-10 00:42:12 UTC]]
+  [1m[35m (4.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mTournament Load (0.2ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "players" ("person_id", "tournament_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["person_id", 5], ["tournament_id", 1], ["created_at", 2016-10-10 00:42:12 UTC], ["updated_at", 2016-10-10 00:42:12 UTC]]
+  [1m[35m (4.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTournament Load (0.2ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "players" ("person_id", "tournament_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["person_id", 3], ["tournament_id", 3], ["created_at", 2016-10-10 00:42:12 UTC], ["updated_at", 2016-10-10 00:42:12 UTC]]
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTournament Load (0.2ms)[0m  [1m[34mSELECT  "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "players" ("person_id", "tournament_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["person_id", 4], ["tournament_id", 1], ["created_at", 2016-10-10 00:42:12 UTC], ["updated_at", 2016-10-10 00:42:12 UTC]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m

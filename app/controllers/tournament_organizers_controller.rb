@@ -6,6 +6,7 @@ class TournamentOrganizersController < ApplicationController
     
     def show
     	@tournament_organizer = TournamentOrganizer.find(params[:id])
+		redirect_to @tournament_organizer.person
     end 
     
     def new #display the for new record
